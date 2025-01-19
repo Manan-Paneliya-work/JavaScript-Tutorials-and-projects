@@ -1,0 +1,16 @@
+h1{
+    color: blue;
+    background-color: yellow;
+
+}
+p{
+    background-color: rgb(246, 198, 198);
+}
+body{
+    background-color: pink;
+}
+
+button{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}

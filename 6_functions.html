@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions </title>
+</head>
+
+<body>
+    <h1>Functions in JS</h1>
+    <script>
+        /*
+        # Function Defination : 
+
+        function functionName(){
+            // do some work
+        }
+
+        function functionName(param1, param2...){
+            // do some work
+        }
+
+        # Function Call
+
+        funtionName(); 
+
+        */
+        function Sum(x, y) {
+            console.log(x + y);
+        }
+        let a = 10;
+        let b = 20;
+        Sum(a, b);
+
+
+        /*
+        # Arrow Functions 
+        -> Compact way to writing a function.
+        const functionName = (param1, param2...)=>{
+            //do this work
+        }
+        */
+        const sum = (a, b) => {
+            console.log(a + b);
+        }
+        sum(3, 8);
+
+        /*
+        forEach Loop in Arrays
+        arr.forEach(callBackFunction)
+     
+        CallbackFunction : it is a function to execute for each element in the array.
+        # A callback is a function passed as an argument to another function.
+        
+        */
+        let arr = ["pune", "delhi", "mumbai"];
+
+        arr.forEach((val, idx, arr) => {
+            console.log(val.toUpperCase(), idx, arr);
+        });
+
+        /*
+        Some More Array Methods 
+        Map : Create a new array with the results of some operation. The value its callback returns are used to form new array.
+        arr.map(callbackFnx(value, index, array))
+        */
+        let num = [1, 2, 3, 4, 5, 6, 7, 8];
+        let nums = num.map((val, idx, arr) => {
+            console.log(val * 10);
+            return val * 10;
+        })
+        console.log(nums);
+
+        /*
+        Some More Array Methods 
+        Filter 
+        Create a new array of elements that give true for a condition/filter.
+        Eg : all even elements
+      
+        */
+        let evens = num.filter((val) => {
+            return val % 2 === 0;
+        })
+        console.log(evens);
+
+        let graterthan3 = num.filter((value)=>{
+            return value > 3 ;
+        });
+        console.log(graterthan3)
+
+        
+        /*
+        Reduce Method :   
+        */
+       let n = [1, 2, 3, 4];
+       const out = n.reduce((result, current)=>{
+        return result + current;
+       })
+       console.log(out);
+
+    //    write a code to find a largest number in array 
+    const largest = num.reduce((prev, curr)=>{
+        return prev > curr ? prev : curr
+    })
+    console.log(largest);
+
+
+    </script>
+</body>
+
+</html>

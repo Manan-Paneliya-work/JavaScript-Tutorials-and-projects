@@ -1,0 +1,7 @@
+.heads{
+    display: inline-block;
+    border: 3px solid greenyellow;
+}
+head{
+    display: inline-block;
+}

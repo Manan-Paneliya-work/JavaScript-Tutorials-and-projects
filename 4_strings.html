@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Strings.</title>
+</head>
+<body>
+    <h1>Strings in JavaSctipts</h1>
+    <script>
+        let str = "GhanShyam";
+        console.log(str.length)
+        console.log(str[0]); //G
+
+        let obj = {
+            item : "pen",
+            price : 10
+        };
+
+        // Template Literals
+        let specialString  = `This is a Template literal`;
+        let output =`the cost of ${obj.item} is ${obj.price}`;
+        console.log(output);
+
+
+        // String Methods in JS
+        // These are built-in functions to manipulate a string .
+        let str2 = " hari"
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+        console.log(str.trim()); //Remove white space
+        console.log(str.slice(4,  ))
+        console.log(str.concat(str2));
+        console.log(str.replace("Shyam", "Shyam Maharaj"))
+        // fetch character at a perticular index
+        console.log(str2.charAt(3))
+    </script>
+</body>
+</html>

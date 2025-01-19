@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <h1>Arrays in JavaScripts</h1>
+    <script>
+     // Collection of items with may or may not same data type.
+
+    //  String -> immutable 
+    // array -> muitablrn 
+
+    // Arrays 
+    let heroes = ["ironman", "thor", "hulk", "shaktiman", "spiderman", "antman"]
+    console.log(heroes)
+    console.log(heroes[0])
+
+    // Looping over an Array 
+    for (let i = 0; i < heroes.length; i++) {
+        const element = heroes[i];
+        console.log(element)
+    }
+
+    // Arrays Methods 
+    // push()
+    // Pop()
+    // toString()
+    let fooditems = ["potato", "apple", "litchi"]
+    fooditems.push("tomato");
+    console.log(fooditems)
+    fooditems.pop()
+    console.log(fooditems);   
+    console.log(fooditems.toString()) 
+
+    
+    // Concate() //joints multiple arrays and return result
+    // unshift() //addto start
+    // shift()  //delete from start and return
+
+     let marvelHeroes = ["thor", "spiderman","iron"];
+     let dcHeros = ["superman", "batman"];
+     let indianHeroes = ["shaktiman", "krish"];
+     
+     let heroes2 = marvelHeroes.concat(dcHeros);
+     marvelHeroes.unshift("antman");
+     console.log("unshift() :",marvelHeroes);
+     let val = marvelHeroes.shift();
+     console.log("shift : ",marvelHeroes)
+     
+     
+    /* Slice() : return a piece of the array
+    slice(startidx, endidx)
+
+    Splice(startidx, delCount, newEl1) : change original array(add, remove, replace)
+*/
+    console.log(heroes2);
+    console.log("slice : ",heroes2.slice(2, 5))
+    heroes2.splice(2, 0, 101);
+    console.log(heroes2);
+
+    </script>
+</body>
+</html>
