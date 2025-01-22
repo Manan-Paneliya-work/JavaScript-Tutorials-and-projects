@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes in JS</title>
+</head>
+
+<body>
+    <!-- 
+        class MyClass{
+            constructor(){}
+            myMethod(){}
+        }
+        let myObj = new MyClass(); 
+     -->
+    <script>
+        class ToyotaCar {
+            constructor(brand){
+                console.log("creating new object");  
+                this.brand = brand;
+            }
+            start() {
+                console.log("start");
+            }
+
+            stop(){
+                console.log("stop");
+            }
+
+            setBrand(brand){
+                this.brand = brand;
+            }
+        }
+        let fortuner = new ToyotaCar();
+        fortuner.setBrand("fortuner");
+        let lexus = new ToyotaCar();
+        lexus.setBrand("lexus");
+        lexus.start();
+        
+    </script>
+
+</body>
+
+</html>

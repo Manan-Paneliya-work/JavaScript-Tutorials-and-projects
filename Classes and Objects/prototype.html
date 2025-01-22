@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototypes in JS</title>
+</head>
+<body>
+    <script>
+        const employee = {
+            calcTax(){
+                console.log("tax rate is 10%");
+            },
+        };
+        const karan = {
+            salary : 50000,
+        };
+        const arjun = {
+            salary : 50000,
+        };
+        karan.__proto__ = employee;
+        arjun.__proto__ = employee;
+        
+    </script>
+</body>
+
+
+</html>

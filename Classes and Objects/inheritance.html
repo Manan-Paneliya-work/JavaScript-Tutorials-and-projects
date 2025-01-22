@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance</title>
+</head>
+<body>
+    <h1>Inheritance Tutorials</h1>
+    <script>
+        /*class Parent{
+
+        }
+        class Child extends Parent{
+
+        }
+
+        **If Child & Parent have same method, child's method will be used.[Method Overriding].
+        */
+
+        class Parent{
+            hello(){
+                console.log("hello!");
+            }
+        }
+        class Child extends Parent{
+            hello2(){
+                console.log("hello 2!");
+            }
+        }
+        let obj = new Child();
+    </script>
+</body>
+</html>
